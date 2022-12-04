@@ -1,0 +1,60 @@
+.bosear {
+    position: relative;
+    padding-bottom: 52px;
+
+    @include mq(tablet) {
+        display: flex;
+        padding-bottom: 150px;
+    }
+
+    @include mq(desktop) {
+        padding-bottom: 412px;
+    }
+}
+
+.bosear-wrapp {
+    @include mq(tablet) {
+        margin-right: 60px;
+        width: 294px;
+    }
+
+    @include mq(desktop) {
+        margin-left: 110px;
+        width: 380px;
+    }
+
+}
+
+.bosear__title {
+    margin-bottom: 32px;
+}
+
+.bosear__subject {
+    margin-bottom: 16px;
+}
+
+.bosear__subjectText {
+    margin-bottom: 32px;
+    width: 243px;
+
+    @include mq(tablet) {
+        width: 268px;
+    }
+
+    @include mq(desktop) {
+        width: 347px;
+    }
+}
+
+.bosear__picture {
+    @include mq(tablet) {
+        position: absolute;
+        top: 1px;
+        right: 0;
+        width: 354px;
+    }
+
+    @include mq(desktop) {
+        width: 700px;
+    }
+}

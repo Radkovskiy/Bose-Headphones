@@ -1,0 +1,87 @@
+.blondegirl {
+    @include mq(mobile-only) {
+        padding-bottom: 52px;
+    }
+
+    @include mq(tablet) {
+        position: relative;
+        padding-bottom: 189px;
+    }
+
+    @include mq(desktop) {
+        padding-bottom: 199px;
+    }
+}
+
+.blondegirl__title {
+    margin-bottom: 32px;
+
+    @include mq(mobile-only) {
+        max-width: 208px;
+    }
+
+    @include mq(tablet) {
+        margin-left: 354px;
+    }
+
+    @include mq(desktop) {
+        width: 470px;
+        margin-left: 660px;
+        margin-bottom: 50px;
+    }
+}
+
+.blondegirl-wrapp {
+    @include mq(tablet) {
+        margin-left: 354px;
+    }
+
+    @include mq(desktop) {
+        margin-left: 660px;
+        width: 496px;
+    }
+}
+
+.blondegirl__subject {
+    margin-bottom: 16px;
+
+    @include mq(desktop) {
+        margin-bottom: 20px
+    }
+}
+
+.blondegirl__subjectText {
+    margin-bottom: 26px;
+
+    @include mq(desktop) {
+        margin-bottom: 40px
+    }
+}
+
+.blondegirl__heading {
+    margin-bottom: 16px;
+
+
+    @include mq(desktop) {
+        margin-bottom: 20px
+    }
+}
+
+.blondegirl__headingText {
+    margin-bottom: 32px;
+}
+
+.blondegirl__picture {
+    @include mq(tablet) {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        display: flex;
+        width: 354px;
+        // height: 540px;
+    }
+
+    @include mq(desktop) {
+        width: 590px;
+    }
+}

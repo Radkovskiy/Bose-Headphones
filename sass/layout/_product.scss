@@ -1,0 +1,126 @@
+.product {
+    position: relative;
+    padding-bottom: 88px;
+}
+
+.product__title {
+    margin-bottom: 32px;
+
+    @include mq(desktop) {
+        margin-bottom: 50px;
+        margin-left: 110px;
+    }
+}
+
+.product__picture {
+    display: block;
+    margin-bottom: 32px;
+
+    @include mq(desktop) {
+        position: absolute;
+        top: 1px;
+        right: 0;
+        width: 700px;
+        height: 664px;
+    }
+}
+
+.product__button {
+    border: none;
+    cursor: pointer;
+    margin-bottom: 32px;
+    margin-right: 7px;
+    background-color: $background-color;
+
+    @include mq(tablet) {
+        margin-bottom: 40px;
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 50px;
+        margin-right: 3px;
+    }
+}
+
+.product__button-margin {
+    @include mq(desktop) {
+        margin-left: 110px;
+    }
+}
+
+.product__button-icon {
+    @include mq(tablet) {
+        width: 58px;
+        height: 58px;
+    }
+}
+
+.product__list {
+    @include mq(desktop) {
+        width: 400px;
+    }
+
+    @include mq(desktop) {
+        margin-left: 110px;
+    }
+}
+
+.product__item {
+    padding: 25px 0 25px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    &:last-child {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+}
+
+.product__link {
+    display: flex;
+    color: $text-color;
+    font-size: 16px;
+}
+
+.icon-pointer {
+    margin-left: auto;
+    width: 20px;
+    display: block;
+}
+
+.product__price {
+    font-weight: 600;
+    font-size: 24px;
+    color: $target-color;
+    margin-top: 32px;
+    margin-bottom: 24px;
+
+    @include mq(tablet) {
+        margin-top: 52px;
+        margin-bottom: 32px;
+
+        font-size: 30px;
+    }
+
+    @include mq(desktop) {
+        margin-left: 110px;
+
+        font-size: 54px;
+    }
+}
+
+.product__order {
+    padding: 19px 113px;
+    border: none;
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: $target-color;
+
+    @include mq(desktop) {
+        padding: 22px 167px;
+        margin-left: 110px;
+    }
+}

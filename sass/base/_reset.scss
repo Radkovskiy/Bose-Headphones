@@ -1,0 +1,82 @@
+img {
+  display: block;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: $main-color;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.2;
+
+  @include mq(tablet) {
+    font-size: 30px;
+  }
+
+  @include mq(desktop) {
+    font-size: 54px;
+  }
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+
+  @include mq(desktop) {
+    font-size: 28px;
+  }
+}
+
+ul,ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  // font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+
+  @include mq(tablet) {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  @include mq(desktop) {
+    font-size: 20px;
+  }
+}

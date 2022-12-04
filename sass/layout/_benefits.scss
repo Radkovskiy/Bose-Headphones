@@ -1,0 +1,109 @@
+.benefits {
+    position: relative;
+    padding-bottom: 52px;
+
+    @include mq(tablet) {
+        padding-bottom: 100px;
+    }
+
+    @include mq(desktop) {
+        padding-bottom: 170px;
+    }
+}
+
+// текст не помещался в контейнер, добавил ширину!!
+.benefits__title {
+    width: 282px;
+    margin-bottom: 32px;
+
+    @include mq(tablet) {
+        margin-left: auto;
+        margin-right: 15px;
+        width: 353px;
+    }
+
+    @include mq(desktop) {
+        width: 634px;
+    }
+}
+
+// не работает!!
+.sunheadphones__picture {
+    margin-bottom: 32px;
+
+    @include mq(tablet) {
+        position: absolute;
+        left: 0;
+        top: 68px;
+        width: 768px;
+    }
+
+    @include mq(desktop) {
+        top: 118px;
+        width: 1440px;
+    }
+}
+
+.benefits__wrapp {
+    margin-top: 32px;
+
+    @include mq(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 363px;
+    }
+
+    @include mq(desktop) {
+        margin-top: 50px;
+        margin-left: 110px;
+        margin-top: 625px;
+
+    }
+}
+
+.benefits__text-wrapp {
+    @include mq(tablet) {
+        width: 294px;
+
+        &:nth-child(1) {
+            margin-right: 60px;
+        }
+    }
+
+    @include mq(desktop) {
+        width: 510px;
+
+        &:nth-child(1) {
+            margin-right: 40px;
+        }
+    }
+}
+
+.benefits__subject {
+    margin-bottom: 16px;
+}
+
+.benefits__subjectText {
+    margin-bottom: 42px;
+    width: 269px;
+
+    @include mq(tablet) {
+        margin-bottom: 0;
+    }
+
+    @include mq(desktop) {
+        width: 477px;
+    }
+}
+
+.benefits__heading {
+    margin-bottom: 16px;
+}
+
+.benefits__headingText {
+    width: 269px;
+
+    @include mq(desktop) {
+        width: 479px;
+    }
+}

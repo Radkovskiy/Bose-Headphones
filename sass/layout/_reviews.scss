@@ -1,0 +1,79 @@
+.reviews {
+    padding-bottom: 16px;
+
+    @include mq(tablet) {
+        padding-bottom: 100px;
+    }
+
+    @include mq(desktop) {
+        position: relative;
+    }
+}
+
+.reviews__title {
+    margin-bottom: 32px;
+
+    @include mq(desktop) {
+        margin-left: 990px;
+        margin-bottom: 50px;
+    }
+}
+
+.video {
+    margin-bottom: 32px;
+    width: 280px;
+    height: 180px;
+
+    @include mq(tablet) {
+        width: 648px;
+        height: 417px;
+    }
+
+    @include mq(desktop) {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        width: 920px;
+        height: 590px;
+    }
+}
+
+.video__link {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: $target-color;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+
+    @include mq(desktop) {
+        margin-left: 990px;
+    }
+}
+
+.video__text {
+    margin-bottom: 32px;
+    width: 249px;
+
+    @include mq(tablet) {
+        width: 500px;
+    }
+
+    @include mq(desktop) {
+        margin-left: 990px;
+        width: 255px;
+        margin-bottom: 70px;
+    }
+}
+
+.циферки {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $target-color;
+    cursor: pointer;
+
+    @include mq(desktop) {
+        margin-left: 990px;
+    }
+}

@@ -1,0 +1,11 @@
+.lastpicture {
+    padding-bottom: 16px;
+
+    @include mq(tablet) {
+        padding-bottom: 100px;
+    }
+
+    @include mq(desktop) {
+        padding: 0 0 170px 0;
+    }
+}

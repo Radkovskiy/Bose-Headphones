@@ -1,0 +1,95 @@
+.header-wrapp {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 31px 20px 31px 20px;
+
+    @include mq(desktop) {
+        padding: 26px 80px 41px 80px;
+    }
+}
+
+.menu-button .icon-menu {
+    display: none;
+}
+
+.menu-button.is-open .icon-menu {
+    display: block;
+}
+
+.menu-button.is-open .icon-close {
+    display: none;
+}
+
+.menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: $background-color;
+    height: 100vh;
+
+    &.is-open {
+        display: block;
+    }
+
+    // @include mq(mobile-only) {
+    //     display: block;
+    // }
+
+    @include mq(tablet) {
+        display: none;
+    }
+
+    @include mq(desktop) {
+        position: static;
+        display: block;
+        height: auto;
+        margin-left: auto;
+    }
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 28px;
+    margin-left: 20px;
+
+    @include mq(desktop) {
+        flex-direction: row;
+        margin-left: auto;
+        justify-content: flex-end;
+    }
+}
+
+.nav__item:not(:last-child) {
+    margin-bottom: 24px;
+
+    @include mq(desktop) {
+        margin-right: 77px;
+    }
+}
+
+.nav__link {
+    color: $text-color;
+    font-size: 14px;
+
+    @include mq(tablet) {
+        font-size: 16px;
+    }
+}
+
+.menu-button {
+    background-color: $background-color;
+    border: none;
+    fill: $main-color;
+
+    @include mq(desktop) {
+        display: none;
+    }
+}

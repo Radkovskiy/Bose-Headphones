@@ -1,0 +1,27 @@
+// .meet {
+
+//     &:hover {
+//         color: $target-color;
+//     }
+
+//     // Start ::after in same position as ::before
+//     &::after {
+//         top: 0;
+//         left: 0;
+//     }
+
+//     // Change colors
+//     &:hover::before {
+//         border-top-color: $target-color;
+//         border-right-color: $target-color;
+//     }
+
+//     &:hover::after {
+//         border-bottom-color: $target-color;
+//         border-left-color: $target-color;
+//         transition: // Animate height first, then width
+//             height 0.25s ease-out,
+//             width 0.25s ease-out 0.25s;
+//     }
+
+// }

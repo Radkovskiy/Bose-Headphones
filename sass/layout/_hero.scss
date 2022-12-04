@@ -1,0 +1,105 @@
+.hero {
+    position: relative;
+    padding-bottom: 52px;
+
+    @include mq(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+
+    @include mq(desktop) {
+        padding-bottom: 260px;
+    }
+}
+
+.hero__noise {
+    margin-bottom: 16px;
+    max-width: 220px;
+
+    @include mq(tablet) {
+        font-size: 16px;
+        line-height: 1.2;
+        max-width: 252px;
+    }
+}
+
+.hero__upto {
+    margin-bottom: 32px;
+
+    @include mq(mobile-only) {
+        max-width: 93px;
+    }
+
+    @include mq(tablet) {
+        font-size: 16px;
+        line-height: 1.2;
+        max-width: 110px;
+        margin-bottom: 105px;
+    }
+}
+
+.hero__title {
+    margin-bottom: 32px;
+    font-size: 34px;
+
+    // маржан не совпадает, но визуально так пизже!!
+    @include mq(tablet) {
+        margin-bottom: 54px;
+        max-width: 289px;
+        font-size: 42px;
+    }
+
+    @include mq(desktop) {
+        margin-left: 110px;
+        font-size: 74px;
+        max-width: 490px;
+        margin-bottom: 86px;
+    }
+}
+
+.hero__button {
+    padding: 19px 113px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: $target-color;
+    border: none;
+    cursor: pointer;
+
+    // кнопка уходит в залупу, поставил ширину!!
+    @include mq(mobile-only) {
+        margin-bottom: 32px;
+    }
+
+    @include mq(tablet) {
+        width: 294px;
+        padding: 19px 120px;
+    }
+
+
+    @include mq(desktop) {
+        margin-left: 110px;
+        width: 400px;
+        height: 68px;
+    }
+}
+
+// хз, как еще спозиционировать картинку справа
+.hero__picture {
+    @include mq(tablet) {
+        position: absolute;
+        top: 1px;
+        right: 0;
+        width: 354px;
+    }
+
+    @include mq(desktop) {
+        right: -59px;
+        width: 810px;
+    }
+
+}
